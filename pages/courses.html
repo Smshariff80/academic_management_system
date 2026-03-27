@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Academic Management System</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Academic Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="grades.html">Grades</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Courses</h2>
+        <section>
+            <h3>Add New Course</h3>
+            <form id="add-course-form">
+                <label for="course-name">Course Name:</label>
+                <input type="text" id="course-name" required>
+                <label for="course-code">Course Code:</label>
+                <input type="text" id="course-code" required>
+                <button type="submit">Add Course</button>
+            </form>
+        </section>
+        <section>
+            <h3>Course List</h3>
+            <table id="courses-table">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample data -->
+                    <tr>
+                        <td>CS101</td>
+                        <td>Introduction to Computer Science</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>MATH201</td>
+                        <td>Calculus II</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Academic Management System</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

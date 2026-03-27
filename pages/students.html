@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - Academic Management System</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Academic Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="grades.html">Grades</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Students</h2>
+        <section>
+            <h3>Add New Student</h3>
+            <form id="add-student-form">
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" required>
+                <label for="student-id">ID:</label>
+                <input type="text" id="student-id" required>
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+        <section>
+            <h3>Student List</h3>
+            <table id="students-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample data -->
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Academic Management System</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
